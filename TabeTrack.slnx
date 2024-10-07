@@ -6,4 +6,6 @@
     <File Path=".editorconfig" />
   </Folder>
   <Project Path="src\api\TabeTrack.Api\TabeTrack.Api.csproj" Type="Classic C#" />
+  <Project Path="src\app-host\TabeTrack.Aspire\TabeTrack.Aspire.csproj" Type="Classic C#" />
+  <Project Path="src\service-defaults\TabeTrack.ServiceDefaults\TabeTrack.ServiceDefaults.csproj" Type="Classic C#" />
 </Solution>
