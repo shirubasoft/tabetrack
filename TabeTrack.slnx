@@ -1,4 +1,12 @@
 ﻿<Solution>
+  <Folder Name="/API/">
+    <Project Path="src\api\TabeTrack.Api.Tests\TabeTrack.Api.Tests.csproj" Type="Classic C#" />
+    <Project Path="src\api\TabeTrack.Api\TabeTrack.Api.csproj" Type="Classic C#" />
+  </Folder>
+  <Folder Name="/Aspire/">
+    <Project Path="src\aspire\TabeTrack.AppHost\TabeTrack.AppHost.csproj" Type="Classic C#" />
+    <Project Path="src\aspire\TabeTrack.ServiceDefaults\TabeTrack.ServiceDefaults.csproj" Type="Classic C#" />
+  </Folder>
   <Folder Name="/Solution Items/">
     <File Path="Directory.Build.props" />
     <File Path="LICENSE" />
@@ -6,8 +14,4 @@
     <File Path=".editorconfig" />
     <File Path="Directory.Packages.props" />
   </Folder>
-  <Project Path="src\api\TabeTrack.Api.Tests\TabeTrack.Api.Tests.csproj" Type="Classic C#" />
-  <Project Path="src\api\TabeTrack.Api\TabeTrack.Api.csproj" Type="Classic C#" />
-  <Project Path="src\aspire\TabeTrack.AppHost\TabeTrack.AppHost.csproj" Type="Classic C#" />
-  <Project Path="src\aspire\TabeTrack.ServiceDefaults\TabeTrack.ServiceDefaults.csproj" Type="Classic C#" />
 </Solution>
