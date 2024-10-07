@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{FF103DD9-BE0F-B4F1-AA0D-DC24E10E9077}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TabeTrack.Api.Tests", "src\api\TabeTrack.Api.Tests\TabeTrack.Api.Tests.csproj", "{5E0B2F83-CEA0-8034-8719-3299E9A7935D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TabeTrack.Api", "src\api\TabeTrack.Api\TabeTrack.Api.csproj", "{532A9136-EB9E-7123-E1F7-C7AEAA56D643}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Aspire", "Aspire", "{5B071126-CB70-E911-84E5-E3CFB322EB5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TabeTrack.AppHost", "src\aspire\TabeTrack.AppHost\TabeTrack.AppHost.csproj", "{EDA80AC2-3F0C-0D42-5BD9-2F36407871FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TabeTrack.ServiceDefaults", "src\aspire\TabeTrack.ServiceDefaults\TabeTrack.ServiceDefaults.csproj", "{7C416585-27D2-0067-F1B9-CF650832476E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B3E21FC3-C9E8-C455-FCDE-F50AAA51C7AD}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+		LICENSE = LICENSE
+		.gitignore = .gitignore
+		.editorconfig = .editorconfig
+		Directory.Packages.props = Directory.Packages.props
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E0B2F83-CEA0-8034-8719-3299E9A7935D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E0B2F83-CEA0-8034-8719-3299E9A7935D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E0B2F83-CEA0-8034-8719-3299E9A7935D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E0B2F83-CEA0-8034-8719-3299E9A7935D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{532A9136-EB9E-7123-E1F7-C7AEAA56D643}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{532A9136-EB9E-7123-E1F7-C7AEAA56D643}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{532A9136-EB9E-7123-E1F7-C7AEAA56D643}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{532A9136-EB9E-7123-E1F7-C7AEAA56D643}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDA80AC2-3F0C-0D42-5BD9-2F36407871FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDA80AC2-3F0C-0D42-5BD9-2F36407871FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDA80AC2-3F0C-0D42-5BD9-2F36407871FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDA80AC2-3F0C-0D42-5BD9-2F36407871FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C416585-27D2-0067-F1B9-CF650832476E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C416585-27D2-0067-F1B9-CF650832476E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C416585-27D2-0067-F1B9-CF650832476E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C416585-27D2-0067-F1B9-CF650832476E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5E0B2F83-CEA0-8034-8719-3299E9A7935D} = {FF103DD9-BE0F-B4F1-AA0D-DC24E10E9077}
+		{532A9136-EB9E-7123-E1F7-C7AEAA56D643} = {FF103DD9-BE0F-B4F1-AA0D-DC24E10E9077}
+		{EDA80AC2-3F0C-0D42-5BD9-2F36407871FE} = {5B071126-CB70-E911-84E5-E3CFB322EB5E}
+		{7C416585-27D2-0067-F1B9-CF650832476E} = {5B071126-CB70-E911-84E5-E3CFB322EB5E}
+	EndGlobalSection
+EndGlobal
