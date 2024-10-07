@@ -4,6 +4,7 @@
     <File Path="LICENSE" />
     <File Path=".gitignore" />
     <File Path=".editorconfig" />
+    <File Path="Directory.Packages.props" />
   </Folder>
   <Project Path="src\api\TabeTrack.Api.Tests\TabeTrack.Api.Tests.csproj" Type="Classic C#" />
   <Project Path="src\api\TabeTrack.Api\TabeTrack.Api.csproj" Type="Classic C#" />
