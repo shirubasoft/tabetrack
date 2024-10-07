@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.ServiceDiscovery;
 
 using OpenTelemetry;
 using OpenTelemetry.Metrics;
@@ -48,7 +47,7 @@ public static class AspireHostingExtensions
         builder.Logging.AddOpenTelemetry(logging =>
         {
             logging.IncludeFormattedMessage = true;
-            logging.IncludeScopes           = true;
+            logging.IncludeScopes = true;
         });
 
         builder.Services.AddOpenTelemetry()
@@ -61,8 +60,8 @@ public static class AspireHostingExtensions
                .WithTracing(tracing =>
                 {
                     tracing.AddAspNetCoreInstrumentation()
-                            // Uncomment the following line to enable gRPC instrumentation (requires the OpenTelemetry.Instrumentation.GrpcNetClient package)
-                            //.AddGrpcClientInstrumentation()
+                           // Uncomment the following line to enable gRPC instrumentation (requires the OpenTelemetry.Instrumentation.GrpcNetClient package)
+                           //.AddGrpcClientInstrumentation()
                            .AddHttpClientInstrumentation();
                 });
 
@@ -93,7 +92,7 @@ public static class AspireHostingExtensions
     public static IHostApplicationBuilder AddDefaultHealthChecks(this IHostApplicationBuilder builder)
     {
         builder.Services.AddHealthChecks()
-                // Add a default liveness check to ensure app is responsive
+               // Add a default liveness check to ensure app is responsive
                .AddCheck("self", () => HealthCheckResult.Healthy(), ["live"]);
 
         return builder;
