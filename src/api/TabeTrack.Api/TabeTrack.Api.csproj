@@ -3,7 +3,7 @@
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.0-rc.1.24452.1"/>
     </ItemGroup>
     <ItemGroup>
-        <ProjectReference Include="..\..\service-defaults\TabeTrack.ServiceDefaults\TabeTrack.ServiceDefaults.csproj"/>
+        <ProjectReference Include="..\..\aspire\TabeTrack.ServiceDefaults\TabeTrack.ServiceDefaults.csproj"/>
     </ItemGroup>
 
     <PropertyGroup>
