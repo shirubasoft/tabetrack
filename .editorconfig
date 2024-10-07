@@ -10,8 +10,8 @@ charset = utf-8
 [*.xml]
 indent_size = 2
 
-# C# files
-[*.cs]
+#### .NET Coding Conventions ####
+[*.{cs,vb}]
 
 #### Core EditorConfig Options ####
 
@@ -21,9 +21,7 @@ tab_width = 4
 
 # New line preferences
 insert_final_newline = true
-
-#### .NET Coding Conventions ####
-[*.{cs,vb}]
+trim_trailing_whitespace = false
 
 # Organize usings
 dotnet_separate_import_directive_groups = true
@@ -186,6 +184,41 @@ csharp_space_between_square_brackets = false
 # Wrapping preferences
 csharp_preserve_single_line_blocks = true
 csharp_preserve_single_line_statements = true
+
+# ReSharper properties
+resharper_align_linq_query = true
+resharper_align_multiline_argument = true
+resharper_align_multiline_array_and_object_initializer = true
+resharper_align_multiline_binary_patterns = true
+resharper_align_multiline_calls_chain = true
+resharper_align_multiline_expression = true
+resharper_align_multiline_extends_list = true
+resharper_align_multiline_list_pattern = true
+resharper_align_multiline_parameter = true
+resharper_align_multiline_property_pattern = true
+resharper_align_multiline_switch_expression = true
+resharper_align_multiline_type_parameter_constraints = true
+resharper_align_multiline_type_parameter_list = true
+resharper_align_multiple_declaration = true
+resharper_align_tuple_components = true
+resharper_autodetect_indent_settings = true
+resharper_csharp_align_first_arg_by_paren = true
+resharper_csharp_int_align_comments = true
+resharper_csharp_outdent_dots = true
+resharper_formatter_off_tag = @formatter:off
+resharper_formatter_on_tag = @formatter:on
+resharper_formatter_tags_enabled = true
+resharper_int_align_assignments = true
+resharper_int_align_binary_expressions = true
+resharper_int_align_invocations = true
+resharper_int_align_nested_ternary = true
+resharper_int_align_property_patterns = true
+resharper_int_align_switch_expressions = true
+resharper_int_align_switch_sections = true
+resharper_int_align_variables = true
+resharper_outdent_binary_ops = true
+resharper_outdent_binary_pattern_ops = true
+resharper_use_indent_from_vs = false
 
 #### Naming styles ####
 [*.{cs,vb}]
@@ -380,3 +413,16 @@ dotnet_naming_style.s_camelcase.capitalization = camel_case
 
 # https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1062
 dotnet_diagnostic.CA1062.severity = none
+
+[{*.har,*.jsb2,*.jsb3,*.json,*.jsonc,*.postman_collection,*.postman_collection.json,*.postman_environment,*.postman_environment.json,.babelrc,.eslintrc,.prettierrc,.stylelintrc,.ws-context,jest.config}]
+indent_style = space
+indent_size = 2
+
+[{*.http,*.rest}]
+indent_style = space
+indent_size = 0
+
+[*.{appxmanifest,asax,ascx,aspx,axaml,blockshader,build,c,c++,c++m,cc,ccm,cginc,compute,cp,cpp,cppm,cs,cshtml,cu,cuh,cxx,cxxm,dtd,fs,fsi,fsscript,fsx,fx,fxh,h,h++,hh,hlsl,hlsli,hlslinc,hp,hpp,hxx,icc,inc,inl,ino,ipp,ixx,master,ml,mli,mpp,mq4,mq5,mqh,mxx,nuspec,paml,razor,resw,resx,shader,shaderFoundry,skin,tcc,tpp,urtshader,usf,ush,uxml,vb,xaml,xamlx,xoml,xsd}]
+indent_style = space
+indent_size = 4
+tab_width = 4
