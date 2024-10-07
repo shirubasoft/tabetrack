@@ -1,6 +1,3 @@
 @TabeTrack.Api_HostAddress = http://localhost:5143
 
-GET {{TabeTrack.Api_HostAddress}}/weatherforecast/
-Accept: application/json
-
 ###
